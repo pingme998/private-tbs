@@ -1,2 +1,3 @@
 FROM pingme998/private-tbs
-COPY super
+COPY supervisord.conf /supervisord.conf
+CMD supervisord -c /supervisord.conf
